@@ -12,7 +12,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="css/newsTick.css">
 <style type="text/css">
-  
+
   #crdtop{
     height: 140px;
     cursor: pointer;
@@ -20,12 +20,41 @@
   #crdbottom{height: 60px;}
 
   .boards{
-    padding-top: 2%; 
+    padding-top: 2%;
   }
 </style>
 
 </head>
 <body>
+  <div id="modalsearch" class="modal bottom-sheet">
+<div class="modal-content">
+  <script>
+(function() {
+var cx = '000464212614805462193:1r7sx1al0gk';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+</div>
+</div>
+
+<div id="modalmail" class="modal bottom-sheet">
+<div class="modal-content">
+
+</div>
+<div class="modal-footer">
+<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+</div>
+</div>
+
 <ul id="student" class="dropdown-content black-text">
 <li><a href="#!">Admission</a></li>
 <li><a href="#!">Current Student</a></li>
@@ -64,14 +93,21 @@
 <li><a href="#!">Moodle</a></li>
 <li><a href="#!">E-Library</a></li>
 <li><a href="#!">Phonebook</a></li>
+<li><a href="#!">NPTEL</a></li>
+<li><a href="#!">QIP</a></li>
+<li><a href="#!">Anchor Cell</a></li>
 </ul>
 <ul id="media" class="dropdown-content">
 <li><a href="#!">News Hub</a></li>
 <li><a href="#!">Photo Gallery</a></li>
 <li><a href="#!">Magazines</a></li>
 </ul>
+<ul id="quicklinks" class="dropdown-content">
+<li><a href="#!">academic calender</a></li>
+<li><a href="#!">circular1</a></li>
+<li><a href="#!">circular2</a></li>
+</ul>
 <ul id="slide-out" class="side-nav">
-  <li><a href="#!">Home</a></li>
   <li class="no-padding">
     <ul class="collapsible collapsible-accordion">
       <li>
@@ -142,6 +178,9 @@
             <li><a href="#!">Moodle</a></li>
             <li><a href="#!">E-Library</a></li>
             <li><a href="#!">Phonebook</a></li>
+            <li><a href="#!">NPTEL</a></li>
+            <li><a href="#!">QIP</a></li>
+            <li><a href="#!">Anchor Cell</a></li>
           </ul>
         </div>
       </li>
@@ -161,23 +200,41 @@
       </li>
     </ul>
   </li>
-  <li><a href="#!">Careers</a></li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="collapsible-header">Quick Links<i class="material-icons">arrow_drop_down</i></a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!">academic calender</a></li>
+            <li><a href="#!">circular1</a></li>
+            <li><a href="#!">circular2</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+
 </ul>
 <div class="navbar-fixed">
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper container black-text">
 
       <a href="#!" class="brand-logo" style="padding-top:5px"><img class="responsive-img" src="svnit1.png"></a>
+      <a href="#modalsearch" class="right button" style="padding:2px"><i class="material-icons">search</i>&nbsp</a>
+      <a href="#modalmail" class="right button" style="padding:2px"><i class="material-icons">mail_outline</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="student">Student<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="campus">Campus<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="department">Department<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="centralfacility">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="media">Media<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="#">Careers</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="student" data-beloworigin="true">Student<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="campus" data-beloworigin="true">Campus<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="department" data-beloworigin="true">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="centralfacility" data-beloworigin="true">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="media" data-beloworigin="true">Media<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="quicklinks" data-beloworigin="true">Quick Links<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
+
       <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+
+
 
     </div>
   </nav>
@@ -204,7 +261,7 @@
 
 <div >
   <div class="row boards ">
-    
+
     <div class="col l4 m4 s12 center-align">
     <div class="card-panel black">
       <span class=" white-text "><B> Student Notice</B></span>
@@ -224,7 +281,7 @@
       </div>
     </div>
 
-   
+
      <div class="col l4 m4 s12  center-align">
     <div class="card-panel black">
       <span class="white-text"><b>Events & Seminars</b></span>
@@ -265,10 +322,15 @@
       <i class="small material-icons" id="nt-3-next" >arrow_upward</i>
       </div>
     </div>
-  
+
 
   </div>
+
+
+
 </div>
+
+
 
 
 
@@ -302,7 +364,7 @@
 <div  style="margin:0px;" class="section card-panel white">
 
       <div class="row center-align">
-      
+
         <div class="col s12 m4 l2">
           <div class="card  hoverable" >
             <div id="crdtop" class="card-content black white-text">
@@ -338,7 +400,7 @@
         </div>
       </div>
             </div>
-    
+
           </div>
         </div>
       <div class="col s12 m4 l2">
@@ -446,7 +508,7 @@
           <ul class="collection with-header">
                   <li class="collection-header"><center><h4 class=" light-green-text text-darken-3">TEQIP 1</h4></center></li>
                 <li class="collection-header"><center><h4 class=" light-green-text text-darken-3">TEQIP 2</h4></center></li>
-                 
+
           </ul>
         </div>
         <div class="modal-footer">
@@ -498,6 +560,7 @@
             <li><a class="white-text" href="#!">Right to Information</a></li>
             <li><a class="white-text" href="#!">About</a></li>
             <li><a class="white-text" href="#!">Contact Us</a></li>
+            <li><a class="white-text" href="#!">About</a></li>
             <li><a class="white-text" href="#!">Helpline</a></li>
             <li><a class="white-text" href="#!">IT policy</a></li>
           </ul>
@@ -530,7 +593,7 @@
   $(document).ready(function(){
      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
      $('.modal').modal();
-  
+
    });
 
   $('#nt-1').newsTicker({
