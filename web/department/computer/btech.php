@@ -51,7 +51,7 @@ Results are awarded on scale of 10.
        </center> </strong>
   <br>
     <strong><center>
-            <a href="btech_1.php">Old Curriclum:</a>&nbsp;&nbsp;&nbsp;|
+            <a href="#">Old Curriclum:</a>&nbsp;&nbsp;&nbsp;|
       &nbsp;&nbsp;&nbsp;<a href="old_curr/2ndyear.php">2nd Year</a>&nbsp;&nbsp;&nbsp;|
             &nbsp;&nbsp;&nbsp;<a href="old_curr/3rdyear.php">3rd Year</a>&nbsp;&nbsp;&nbsp;|
       &nbsp;&nbsp;&nbsp;<a href="old_curr/4thyear.php">4th Year</a>&nbsp;&nbsp;&nbsp;|

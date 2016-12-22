@@ -19,11 +19,13 @@
   .boards{
     padding-top: 2%; 
   }
+
+  <?php echo $style; ?>
 </style>
 
 </head>
 <body>
-<div id="holder">
+
 <ul id="academics" class="dropdown-content black-text">
 <li><a href="admissions.php">Admission</a></li>
 <li><a href="btech.php">B.Tech Computer Engineering</a></li>
