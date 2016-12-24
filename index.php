@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="svnit.png">
+  <link rel="icon" type="image/png" href="images/svnit.png">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>SVNIT</title>
@@ -12,7 +12,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="css/newsTick.css">
 <style type="text/css">
-  
+
   #crdtop{
     height: 140px;
     cursor: pointer;
@@ -20,12 +20,41 @@
   #crdbottom{height: 60px;}
 
   .boards{
-    padding-top: 2%; 
+    padding-top: 2%;
   }
 </style>
 
 </head>
 <body>
+  <div id="modalsearch" class="modal bottom-sheet">
+<div class="modal-content">
+  <script>
+(function() {
+var cx = '000464212614805462193:1r7sx1al0gk';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+</div>
+</div>
+
+<div id="modalmail" class="modal bottom-sheet">
+<div class="modal-content">
+
+</div>
+<div class="modal-footer">
+<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+</div>
+</div>
+
 <ul id="student" class="dropdown-content black-text">
 <li><a href="#!">Admission</a></li>
 <li><a href="#!">Current Student</a></li>
@@ -56,7 +85,8 @@
 <li><a href="#!">Banks</a></li>
 <li><a href="#!">Post Office</a></li>
 <li><a href="#!">Security</a></li>
-<li><a href="#!">CCC</a></li>
+<li><a href="web/ccc/ccc.php">CCC</a></li>
+<li><a href="web/tnp/placement.php">TNP</a></li>
 </ul>
 <ul id="centralfacility" class="dropdown-content">
 <li><a href="#!">Web Mail</a></li>
@@ -64,14 +94,21 @@
 <li><a href="#!">Moodle</a></li>
 <li><a href="#!">E-Library</a></li>
 <li><a href="#!">Phonebook</a></li>
+<li><a href="#!">NPTEL</a></li>
+<li><a href="#!">QIP</a></li>
+<li><a href="#!">Anchor Cell</a></li>
 </ul>
 <ul id="media" class="dropdown-content">
 <li><a href="#!">News Hub</a></li>
 <li><a href="#!">Photo Gallery</a></li>
 <li><a href="#!">Magazines</a></li>
 </ul>
+<ul id="quicklinks" class="dropdown-content">
+<li><a href="#!">academic calender</a></li>
+<li><a href="#!">circular1</a></li>
+<li><a href="#!">circular2</a></li>
+</ul>
 <ul id="slide-out" class="side-nav">
-  <li><a href="#!">Home</a></li>
   <li class="no-padding">
     <ul class="collapsible collapsible-accordion">
       <li>
@@ -104,7 +141,8 @@
             <li><a href="#!">Banks</a></li>
             <li><a href="#!">Post Office</a></li>
             <li><a href="#!">Security</a></li>
-            <li><a href="#!">CCC</a></li>
+            <li><a href="web/ccc/ccc.php">CCC</a></li>
+            <li><a href="web/tnp/placement.php">TNP</a></li>
           </ul>
         </div>
       </li>
@@ -142,6 +180,9 @@
             <li><a href="#!">Moodle</a></li>
             <li><a href="#!">E-Library</a></li>
             <li><a href="#!">Phonebook</a></li>
+            <li><a href="#!">NPTEL</a></li>
+            <li><a href="#!">QIP</a></li>
+            <li><a href="#!">Anchor Cell</a></li>
           </ul>
         </div>
       </li>
@@ -161,23 +202,41 @@
       </li>
     </ul>
   </li>
-  <li><a href="#!">Careers</a></li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="collapsible-header">Quick Links<i class="material-icons">arrow_drop_down</i></a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!">academic calender</a></li>
+            <li><a href="#!">circular1</a></li>
+            <li><a href="#!">circular2</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+
 </ul>
 <div class="navbar-fixed">
   <nav class="white" role="navigation">
-    <div class="nav-wrapper ">
+    <div class="nav-wrapper black-text" style="padding-left:5%;padding-right:5%">
 
-      <a href="#!" class="brand-logo" style="padding-top:5px"><img class="responsive-img" src="svnit1.png"></a>
+      <a href="#!" class="brand-logo" style="padding-top:5px;"><img class="responsive-img" src="images/svnit1.png"></a>
+      <a href="#modalsearch" class="right button" style="padding:4px"><i class="material-icons">search</i>&nbsp</a>
+      <a href="#modalmail" class="right button" style="padding:4px"><i class="material-icons">mail_outline</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="student">Student<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="campus">Campus<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="department">Department<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="centralfacility">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="media">Media<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="#">Careers</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="student" data-beloworigin="true">Student<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="campus" data-beloworigin="true">Campus<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="department" data-beloworigin="true">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="centralfacility" data-beloworigin="true">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="media" data-beloworigin="true">Media<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="quicklinks" data-beloworigin="true">Quick Links<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
+
       <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+
+
 
     </div>
   </nav>
@@ -195,7 +254,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -211,36 +270,63 @@
     </div>
     <div id="nt-1-container" class="nt-container">
       <ul class="newsticker" id="nt-1">
+  <?php
+require 'database.php';
 
-          <li>Binary letters, 1110101011<a href="#">110101111101011</a> 00010101100</li>
-          <li>Piyush  is my name <a href="#">ut condimentum lectus</a> piyush piyush.</li>
-          <li>arshit himanshu , <a href="#">ut condimentum lectus</a> himanshu arshit.</li>
-          <?php
-                  require 'database.php';
+//get current date
+date_default_timezone_set('Asia/Kolkata');
+$date = date("Y-m-d");
 
-                  $query = 'SELECT * FROM notice_events order by notice_event_id DESC';
-                  $result = mysqli_query($conn,$query);
+//select record for notice bord before deadline
+$query = 'SELECT * FROM notice_events where end_date >= "'.$date.'" and notice_event = "1" and display = "1" order by important DESC , notice_event_id DESC';
+$result = mysqli_query($conn,$query);
 
+  //clear temporary table 
+              $sql = 'delete from temp';
+              mysqli_query($conn,$sql);
 
+          
                     while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+
+                      //take first record from table
                       date_default_timezone_set('Asia/Kolkata');
                         $date = date("Y-m-d");
-                                
-                        $notice_event = $row['notice_event'];
-                        $end_date = $row['end_date'];
-                        if(($notice_event == "1") && ($end_date >= $date)) {
                         $title = $row['title'];
-                        $desc = $row['description'];
-                        $link = $row['link'];
+                        $ev_no = $row['notice_event'];
+                        //check that record exist in temporary table or not
+                        $tmp = 'select * from temp where title = "'.$title.'"';
+                        $tmp = mysqli_query($conn,$tmp);
+                        $tmp = mysqli_fetch_array($tmp,MYSQLI_ASSOC);
+                        if($tmp['id'] != '1'){
+
+                        //if not then insert in temporary table and display all record that group
+                        $check = 'insert into temp (id,title) values ("1","'.$title.'")';
+                        mysqli_query($conn,$check);
+                        $group = 'select * from notice_events where title = "'.$title.'" and display = "1" and end_date >= "'.$date.'" order by notice_event_id desc';  
+                        $res = mysqli_query($conn,$group);
+                        echo '<li>'.$title;
+                      
+                        
+
+                      while($grp=mysqli_fetch_array($res,MYSQLI_ASSOC)){
+                        $notice_event = $grp['notice_event'];
+                        $end_date = $grp['end_date'];
+                        $desc = $grp['description'];
+                        $link = $grp['link'];
                         // echo '<script>alert("'.$link.'"); </script>';
-                        $imp = $row['important'];
-                        echo '<li><table cellpadding="4">';
-                        echo '<tr><td>'.$title.' | '.'<a href="'.$link.'">'.$desc.'</a></td></tr></table></li>';
+                        $imp = $grp['important'];
+                        echo ' | '.'<a href="'.$link.'">'.$desc.'</a>';
+                      
                       }
+                      echo '</li>';
+                    }
                         }
+              
 
 
-              ?>
+?>
+
+      
       </ul>
       <i class="small material-icons" id="nt-1-prev">arrow_downward</i>
       <i class="small material-icons" id="nt-1-next" >arrow_upward</i>
@@ -254,32 +340,56 @@
     </div>
     <div id="nt-2-container" class="nt-container">
       <ul class="newsticker" id="nt-2">
-          <li>Binary letters, 1110101011<a href="#">110101111101011</a> 00010101100</li>
-          <li>Piyush  is my name <a href="#">ut condimentum lectus</a> piyush piyush.</li>
-          <li>arshit himanshu , <a href="#">ut condimentum lectus</a> himanshu arshit.</li>
-          <?php
-                    $query = 'SELECT * FROM notice_events order by notice_event_id DESC';
-                    $result = mysqli_query($conn,$query);
+      
+              <?php
+              //get data for event bord before deadline
+              $query = 'SELECT * FROM notice_events where end_date >= "'.$date.'" and notice_event = "0" and display = "1" order by important DESC , notice_event_id DESC';
+              $result = mysqli_query($conn,$query);
+                
+                //clear temp record
+              $sql = 'delete from temp';
+              mysqli_query($conn,$sql);
 
+          
                     while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
                       date_default_timezone_set('Asia/Kolkata');
                         $date = date("Y-m-d");
-                                
-                        $notice_event = $row['notice_event'];
-                        $end_date = $row['end_date'];
-                        if(($notice_event == "0") && ($end_date >= $date)) {
                         $title = $row['title'];
-                        $desc = $row['description'];
-                        $link = $row['link'];
-                        // echo '<script>alert("'.$link.'"); </script>';
-                        $imp = $row['important'];
-                        echo '<li class="news-item"><table cellpadding="4">';
-                        echo '<tr><td>'.$title.' | '.'<a href="'.$link.'">'.$desc.'</a></td></tr></table></li>';
-                      }
-                        }
+                        $ev_no = $row['notice_event'];
+                        //take first record from table
+                        //check already exist or not
 
+                        $tmp = 'select * from temp where title = "'.$title.'"';
+                        $tmp = mysqli_query($conn,$tmp);
+                        $tmp = mysqli_fetch_array($tmp,MYSQLI_ASSOC);
+                        
+                        //if not then display and add in temp table
+                        if($tmp['id'] != '1'){
+                        $check = 'insert into temp (id,title) values ("1","'.$title.'")';
+                        mysqli_query($conn,$check);
+                        $group = 'select * from notice_events where title = "'.$title.'" and display = "1" and end_date >= "'.$date.'" order by notice_event_id desc';  
+                        $res = mysqli_query($conn,$group);
+                        echo '<li>'.$title;
+                      
+
+                      while($grp=mysqli_fetch_array($res,MYSQLI_ASSOC)){
+                        $notice_event = $grp['notice_event'];
+                        $end_date = $grp['end_date'];
+                        $desc = $grp['description'];
+                        $link = $grp['link'];
+                        // echo '<script>alert("'.$link.'"); </script>';
+                        $imp = $grp['important'];
+                        echo ' | '.'<a href="'.$link.'">'.$desc.'</a>';
+                      
+                      }
+                      echo '</li>';
+                    }
+                        }
+              
 
               ?>
+
+     
       </ul>
       <i class="small material-icons" id="nt-2-prev">arrow_downward</i>
       <i class="small material-icons" id="nt-2-next" >arrow_upward</i>
@@ -295,32 +405,55 @@
     </div>
     <div id="nt-3-container" class="nt-container">
       <ul class="newsticker" id="nt-3">
-          <li>Binary letters, 1110101011<a href="#">110101111101011</a> 00010101100</li>
-          <li>Piyush  is my name <a href="#">ut condimentum lectus</a> piyush piyush.</li>
-          <li>arshit himanshu , <a href="#">ut condimentum lectus</a> himanshu arshit.</li>
         <?php
-                    $query = 'SELECT * FROM notice_events order by notice_event_id DESC';
-                    $result = mysqli_query($conn,$query);
+              //get data for event bord before deadline
+              $query = 'SELECT * FROM notice_events where end_date >= "'.$date.'" and notice_event = "2" and display = "1" order by important DESC , notice_event_id DESC';
+              $result = mysqli_query($conn,$query);
+                
+                //clear temp record
+              $sql = 'delete from temp';
+              mysqli_query($conn,$sql);
 
+          
                     while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
                       date_default_timezone_set('Asia/Kolkata');
                         $date = date("Y-m-d");
-                                
-                        $notice_event = $row['notice_event'];
-                        $end_date = $row['end_date'];
-                        if(($notice_event == "2") && ($end_date >= $date)) {
                         $title = $row['title'];
-                        $desc = $row['description'];
-                        $link = $row['link'];
-                        // echo '<script>alert("'.$link.'"); </script>';
-                        $imp = $row['important'];
-                        echo '<li class="news-item"><table cellpadding="4">';
-                        echo '<tr><td>'.$title.' | '.'<a href="'.$link.'">'.$desc.'</a></td></tr></table></li>';
-                      }
-                        }
+                        $ev_no = $row['notice_event'];
+                        //take first record from table
+                        //check already exist or not
 
+                        $tmp = 'select * from temp where title = "'.$title.'"';
+                        $tmp = mysqli_query($conn,$tmp);
+                        $tmp = mysqli_fetch_array($tmp,MYSQLI_ASSOC);
+                        
+                        //if not then display and add in temp table
+                        if($tmp['id'] != '1'){
+                        $check = 'insert into temp (id,title) values ("1","'.$title.'")';
+                        mysqli_query($conn,$check);
+                        $group = 'select * from notice_events where title = "'.$title.'" and display = "1" and end_date >= "'.$date.'" order by notice_event_id desc';  
+                        $res = mysqli_query($conn,$group);
+                        echo '<li>'.$title;
+                      
+
+                      while($grp=mysqli_fetch_array($res,MYSQLI_ASSOC)){
+                        $notice_event = $grp['notice_event'];
+                        $end_date = $grp['end_date'];
+                        $desc = $grp['description'];
+                        $link = $grp['link'];
+                        // echo '<script>alert("'.$link.'"); </script>';
+                        $imp = $grp['important'];
+                        echo ' | '.'<a href="'.$link.'">'.$desc.'</a>';
+                      
+                      }
+                      echo '</li>';
+                    }
+                        }
+              
 
               ?>
+
+   
       </ul>
       <i class="small material-icons" id="nt-3-prev">arrow_downward</i>
       <i class="small material-icons" id="nt-3-next" >arrow_upward</i>
@@ -352,7 +485,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
 
@@ -541,7 +674,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer black">
